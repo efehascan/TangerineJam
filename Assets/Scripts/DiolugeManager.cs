@@ -7,9 +7,7 @@ public class DialogManager : MonoBehaviour
 {
     public Dialog[] allDialogs;  // Tüm diyalogları tutan dizi
     private Dialog currentDialog; // Şu anda gösterilen diyalog
-    private bool inAction;
-    public ConfidenceSystem _confidenceSystem;
-    public int currentAnswer;
+   
 
     // UI Elemanları için TextMeshProUGUI referansları
     public TextMeshProUGUI mainText;  // Ana diyalog metni
@@ -25,7 +23,7 @@ public class DialogManager : MonoBehaviour
     private void Start()
     {
         LoadDialog("0");
-        _confidenceSystem = FindObjectOfType<ConfidenceSystem>();
+      
     }
 
     public void LoadDialog(string dialogId)
@@ -40,10 +38,7 @@ public class DialogManager : MonoBehaviour
                 break;
             }
         }
-        
-        _confidenceSystem.CheckConfidence();
-        
-        
+
     }
 
     private void DisplayDialog(Dialog dialog)
@@ -69,13 +64,14 @@ public class DialogManager : MonoBehaviour
         option1Button.onClick.AddListener(() => OnOptionSelected(1));
         option2Button.onClick.AddListener(() => OnOptionSelected(2));
         option3Button.onClick.AddListener(() => OnOptionSelected(3));
+
     }
 
     public void OnOptionSelected(int option)
     {
-        currentAnswer = option;
+        
         string nextDialogId = null;
-        Debug.Log("option"+option);
+        
         
 
         // Seçilen seçeneğe göre bir sonraki diyalog ID'sini al

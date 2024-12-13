@@ -20,3 +20,5 @@ MonoBehaviour:
   option1Id: 4
   option2Id: 4
   option3Id: 3
+  forAction: 1
+  questionId: 1

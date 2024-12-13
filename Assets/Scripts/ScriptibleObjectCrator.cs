@@ -12,4 +12,5 @@ public class Dialog : ScriptableObject
     public string option1Id;   // ID of the ScriptableObject that option 1 leads to
     public string option2Id;   // ID of the ScriptableObject that option 2 leads to
     public string option3Id;   // ID of the ScriptableObject that option 3 leads to
+
 }

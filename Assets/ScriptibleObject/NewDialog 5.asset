@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ba697ac7fbf1cc43b346ab1b48d5b6d, type: 3}
-  m_Name: NewDialog 1
+  m_Name: NewDialog 5
   m_EditorClassIdentifier: 
-  dialogId: 1
-  mainString: diolog1
-  option1: 3
-  option2: 4
-  option3: 4
-  option1Id: 3
-  option2Id: 4
-  option3Id: 4
+  dialogId: 4
+  mainString: diolog4
+  option1: 
+  option2: 
+  option3: 
+  option1Id: 
+  option2Id: 
+  option3Id: 
   forAction: 1
-  questionId: 1
+  questionId: 0
