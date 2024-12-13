@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba697ac7fbf1cc43b346ab1b48d5b6d, type: 3}
   m_Name: NewDialog 3
   m_EditorClassIdentifier: 
-  dialogId: 2
-  mainString: diolog2
-  option1: 1
-  option2: 1
-  option3: 2
-  option1Id: 1
-  option2Id: 1
-  option3Id: 2
+  dialogId: 3
+  mainString: diolog3
+  option1: 
+  option2: 
+  option3: 
+  option1Id: 
+  option2Id: 
+  option3Id: 

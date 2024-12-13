@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogId: 2
   mainString: diolog2
-  option1: 1
-  option2: 1
-  option3: 2
-  option1Id: 1
-  option2Id: 1
-  option3Id: 2
+  option1: 4
+  option2: 4
+  option3: 3
+  option1Id: 4
+  option2Id: 4
+  option3Id: 3

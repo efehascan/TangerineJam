@@ -9,7 +9,7 @@ public class DialogManager : MonoBehaviour
     private Dialog currentDialog; // Şu anda gösterilen diyalog
     private bool inAction;
     public ConfidenceSystem _confidenceSystem;
-    private int currentAnswer;
+    public int currentAnswer;
 
     // UI Elemanları için TextMeshProUGUI referansları
     public TextMeshProUGUI mainText;  // Ana diyalog metni
@@ -73,9 +73,10 @@ public class DialogManager : MonoBehaviour
 
     public void OnOptionSelected(int option)
     {
-        string nextDialogId = null;
-        Debug.Log(option);
         currentAnswer = option;
+        string nextDialogId = null;
+        Debug.Log("option"+option);
+        
 
         // Seçilen seçeneğe göre bir sonraki diyalog ID'sini al
         switch (option)
