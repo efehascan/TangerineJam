@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Character : MonoBehaviour
@@ -12,12 +13,15 @@ public class Character : MonoBehaviour
     private RectTransform infoCardRect; // Bilgi kartının RectTransform'u
     private Canvas canvas; // Bilgi kartının ait olduğu Canvas
     private DialogManager _dialogManager;
+    public CameraZoom CameraZoom;
+    
    
  
 
     void Start()
     {
         
+        CameraZoom = FindObjectOfType<CameraZoom>();
         _dialogManager = FindObjectOfType<DialogManager>();
         if (infoCard != null)
         {
@@ -76,6 +80,8 @@ public class Character : MonoBehaviour
         Debug.Log($"{gameObject.name} tıklandı!"); 
         _dialogManager.StartConversition();
         Destroy(infoCard);
+        CameraZoom.MoveCameraToTarget("Women");
+        
     }
 
    

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: "Assets/Scenes/MainMen\xFC.unity"
+    guid: b119e8b918fc4c24fac010e719b58cda
+  - enabled: 1
     path: Assets/Scenes/LoseScence.unity
     guid: d4fa48fbec3c9054d85a62982b11f079
   - enabled: 1

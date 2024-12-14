@@ -16,11 +16,17 @@ public class QuestionsManager : MonoBehaviour
       {
          panel.SetActive(false);
       }
+     
+   }
+
+   public void BeginQuestions()
+   {
       questionPanels[0].SetActive(true);
    }
 
    public void NextQuestion()
    {
+      questionPanels[0].SetActive(false);
       // Mevcut paneli kapat
       questionPanels[currentQuestionIndex].SetActive(false);
 
@@ -34,6 +40,7 @@ public class QuestionsManager : MonoBehaviour
       {
          Debug.Log("Tüm sorular cevaplandı!");
          panel.SetActive(false);
+         
          
       }
    }
