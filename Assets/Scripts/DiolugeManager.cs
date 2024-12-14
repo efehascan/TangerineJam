@@ -6,10 +6,9 @@ using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
     public Dialog[] allDialogs;  // Tüm diyalogları tutan dizi
-    private Dialog currentDialog; // Şu anda gösterilen diyalog
+    public Dialog currentDialog; // Şu anda gösterilen diyalog
     public ConfidenceSystem _confidenceSystem;
-    public string diolugeId;
-   
+    public int currentDiologQuestion;
 
     // UI Elemanları için TextMeshProUGUI referansları
     public TextMeshProUGUI mainText;  // Ana diyalog metni
@@ -26,7 +25,6 @@ public class DialogManager : MonoBehaviour
     {
         LoadDialog("0");
         _confidenceSystem = FindObjectOfType<ConfidenceSystem>();
-
     }
 
     public void LoadDialog(string dialogId)
@@ -41,7 +39,6 @@ public class DialogManager : MonoBehaviour
                 break;
             }
         }
-        _confidenceSystem.actionDictionary[diolugeId]();
     }
 
     private void DisplayDialog(Dialog dialog)
@@ -68,8 +65,7 @@ public class DialogManager : MonoBehaviour
         option2Button.onClick.AddListener(() => OnOptionSelected(2));
         option3Button.onClick.AddListener(() => OnOptionSelected(3));
 
-        diolugeId = dialog.dialogId;
-
+        currentDiologQuestion = dialog.questionId;
     }
 
     public void OnOptionSelected(int option)
@@ -96,5 +92,6 @@ public class DialogManager : MonoBehaviour
         {
             LoadDialog(nextDialogId);
         }
+        
     }
 }

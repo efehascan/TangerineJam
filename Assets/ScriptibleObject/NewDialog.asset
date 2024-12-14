@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: NewDialog
   m_EditorClassIdentifier: 
   dialogId: 0
-  mainString: diolog0
-  option1: 1
-  option2: 1
-  option3: 2
+  mainString: "Futboldan Ho\u015Flan\u0131r m\u0131s\u0131n"
+  option1: "Hay\u0131r ya barabar oyunu"
+  option2: "Ya sadece milli ma\xE7lar\u0131 takip ederim asl\u0131nda"
+  option3: "Sar\u0131 Lacivert E b\xFCy\xFCk Fener"
   option1Id: 1
   option2Id: 1
   option3Id: 2
-  forAction: 1
   questionId: 0

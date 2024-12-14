@@ -1,15 +1,15 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConfidenceSystem : MonoBehaviour
+public class LoveSystem : MonoBehaviour
 {
-   public int Confidence = 100; //genel özgüven değeri
+   public int Love = 100; //genel özgüven değeri
    private DialogManager _dialogManager; //diyolog manageri çekiyorum
 
-   private int QuestionOneValue = 1; //başta karar veridiğimiz soruların değerleri birinci soru için alttakilerde aynı
-   private int QuestionTwoValue= 2;
-   private int QuestionThereValue= 3;
+   private int QuestionOneExpectionAnswer = 2; //başta karar veridiğimiz soruların değerleri birinci soru için alttakilerde aynı
+   private int QuestionTwoExpectionAnswer= 3;
+   private int QuestionThereExpectionAnswer= 1;
    
 
    private int charaterValue; // anlık olarak hangi sorunun değerini tutuğunu hesaplayan değişken
@@ -18,32 +18,31 @@ public class ConfidenceSystem : MonoBehaviour
    private void Start()
    {
       _dialogManager = FindObjectOfType<DialogManager>();
-      Confidence = 100;
+      Love = 0;
    }
 
    private void Update()
    {
-      Debug.Log(Confidence); 
+      Debug.Log("Love"+Love); 
    }
 
    void DecidedCharaterValue()
    {
-      Debug.Log("QuestionID"+_dialogManager.currentDiologQuestion);
       switch (_dialogManager.currentDiologQuestion) // diolog managerdeki hangi diyologta olduğumuza bakıp diyoloüın hangi soru ile ilgili olduğunu kontrol ediyrum
       {
          case 0: // soru 1 için 
-            charaterValue = QuestionOneValue;
+            charaterValue =QuestionOneExpectionAnswer;
             break;
          case 1: //soru 2 için
-            charaterValue = QuestionTwoValue;
+            charaterValue =QuestionTwoExpectionAnswer;
             break;
          case 2: //soru 3 için
-            charaterValue = QuestionThereValue;
+            charaterValue = QuestionThereExpectionAnswer;
             break;
       }
    }
    
-   public void ChangeConfidence(int changeValue)
+   public void ChangeLove(int changeValue)
    {
       DecidedCharaterValue(); //butonlarla ilk çağırınca hangi soru ile alakalı cevap veridğimize bakan değişken
       Debug.Log("charatervalue"+ charaterValue);
@@ -51,23 +50,22 @@ public class ConfidenceSystem : MonoBehaviour
       switch (currentValue)
       {
          case -2:
-            Confidence = Confidence- 20;
+            Love = Love - 20;
             break;
          case -1:
-            Confidence = Confidence;
+            Love = Love;
             break;
          case 0:
-            Confidence = Confidence + 10;
+            Love = Love + 10;
             break;
          case 1:
-            Confidence = Confidence;
+            Love = Love;
             break;
          case 2:
-            Confidence = Confidence - 20;
+            Love = Love - 20;
             break;
          
       }
    }
-   
-   
+
 }

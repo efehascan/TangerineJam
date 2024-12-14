@@ -153,11 +153,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allDialogs:
   - {fileID: 11400000, guid: 863f112630f1d75419ce87ca2649b2e8, type: 2}
-  - {fileID: 11400000, guid: 4a04ab2cbbdd7f240a300c2a3a68c722, type: 2}
-  - {fileID: 11400000, guid: ab03ed4191ac00c46b94768d752a13ea, type: 2}
-  - {fileID: 11400000, guid: 0792c6de0105980498e515343d34e5ac, type: 2}
-  - {fileID: 11400000, guid: 03204c3e1279f684b81342cf40653647, type: 2}
+  - {fileID: 11400000, guid: d48c3f0f496b81243acf7c51711eea13, type: 2}
+  - {fileID: 11400000, guid: 2c9efc9bdaa70ae48ba3c5e3c1f8baf9, type: 2}
+  - {fileID: 11400000, guid: d0db8b0893a2f1148a28ddc1002047e9, type: 2}
+  - {fileID: 11400000, guid: e20176e6e24e06b4c9fd8e58c6705233, type: 2}
+  - {fileID: 11400000, guid: f96274b14a995b6469b9c0935735876e, type: 2}
+  - {fileID: 11400000, guid: 700271248be5ee04cae2cc135fc789d1, type: 2}
+  - {fileID: 11400000, guid: 4c97b7cd656773b40bf905daa2b6d29f, type: 2}
+  currentDialog: {fileID: 0}
   _confidenceSystem: {fileID: 7582785}
+  currentDiologQuestion: 0
   mainText: {fileID: 424800299}
   option1Button: {fileID: 57470828}
   option2Button: {fileID: 2140983130}
@@ -191,7 +196,7 @@ GameObject:
   - component: {fileID: 7582786}
   - component: {fileID: 7582785}
   m_Layer: 0
-  m_Name: CheckConfidance
+  m_Name: ConfidenceSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,6 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be8168fa7faf09469189dfd673fdf95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Confidence: 0
 --- !u!4 &7582786
 Transform:
   m_ObjectHideFlags: 0
@@ -444,6 +450,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3017301}
         m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
         m_MethodName: OnOptionSelected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7582785}
+        m_TargetAssemblyTypeName: ConfidenceSystem, Assembly-CSharp
+        m_MethodName: ChangeConfidence
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1156,6 +1174,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7582785}
+        m_TargetAssemblyTypeName: ConfidenceSystem, Assembly-CSharp
+        m_MethodName: ChangeConfidence
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1377,6 +1407,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3017301}
         m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
         m_MethodName: OnOptionSelected
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7582785}
+        m_TargetAssemblyTypeName: ConfidenceSystem, Assembly-CSharp
+        m_MethodName: ChangeConfidence
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

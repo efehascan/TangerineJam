@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: NewDialog 4
   m_EditorClassIdentifier: 
   dialogId: 4
-  mainString: diolog4
-  option1: 5
-  option2: 5
-  option3: 5
+  mainString: Selamlar Merhabe ben diyologId4
+  option1: 5 e gider
+  option2: 6 e gider
+  option3: 7 e gider
   option1Id: 5
-  option2Id: 5
-  option3Id: 5
+  option2Id: 6
+  option3Id: 7
+  questionId: 2
