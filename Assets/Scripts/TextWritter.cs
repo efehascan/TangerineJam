@@ -13,7 +13,7 @@ public class TextWritter : MonoBehaviour
     private float timer;
 
 
-    void AddWriter(Text uiText, string textToWrite, float timePerCharacter)
+    public void AddWriter(Text uiText, string textToWrite, float timePerCharacter)
     {
         this.uiText = uiText;
         this.textToWrite = textToWrite;
