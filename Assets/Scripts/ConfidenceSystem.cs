@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ConfidenceSystem : MonoBehaviour
 {
-   public int Confidence = 100; //genel özgüven değeri
+   public float Confidence = 100; //genel özgüven değeri
    private DialogManager _dialogManager; //diyolog manageri çekiyorum
 
    private int QuestionOneValue = 1; //başta karar veridiğimiz soruların değerleri birinci soru için alttakilerde aynı
@@ -15,6 +17,8 @@ public class ConfidenceSystem : MonoBehaviour
    private int charaterValue; // anlık olarak hangi sorunun değerini tutuğunu hesaplayan değişken
    private int currentValue; // question değerinden charter değerini çıkardığım sonucu tutan değişken
 
+   public Image progressBar;
+
    private void Start()
    {
       _dialogManager = FindObjectOfType<DialogManager>();
@@ -24,6 +28,7 @@ public class ConfidenceSystem : MonoBehaviour
    public void ExchangeQuestionOne(int value)
    {
       QuestionOneValue = value;
+      
    }
    public void ExchangeQuestionTwo(int value)
    {
@@ -34,9 +39,17 @@ public class ConfidenceSystem : MonoBehaviour
       QuestionThereValue = value;
    }
 
+   
+
    private void Update()
    {
       Debug.Log(Confidence); 
+      Debug.Log( QuestionOneValue);
+      progressBar.fillAmount = Confidence / 100f;
+      if (Confidence<25f)
+      {
+         SceneManager.LoadScene("LoseScence");
+      }
    }
 
    void DecidedCharaterValue()
@@ -80,7 +93,13 @@ public class ConfidenceSystem : MonoBehaviour
             break;
          
       }
+
+      
    }
-   
+
+   public void ExchangeScence(string ScenceName)
+   {
+      SceneManager.LoadScene(ScenceName);
+   }
    
 }

@@ -11,6 +11,7 @@ public class DialogManager : MonoBehaviour
     public Dialog currentDialog;
     public ConfidenceSystem _confidenceSystem;
     public int currentDiologQuestion;
+    public GameObject allOver;
 
     public TextMeshProUGUI mainText;
     public Button option1Button;
@@ -28,9 +29,15 @@ public class DialogManager : MonoBehaviour
     private void Start()
     {
         //load diyolog sıfır yerine tetikleyen olay gerçekleşince olacak 
+        allOver.SetActive(false);
         
-        LoadDialog("0");
         _confidenceSystem = FindObjectOfType<ConfidenceSystem>();
+    }
+
+   public void StartConversition()
+    {
+        LoadDialog("0");
+        allOver.SetActive(true);
     }
 
     public void LoadDialog(string dialogId)
