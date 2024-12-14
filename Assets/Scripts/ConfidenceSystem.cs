@@ -21,6 +21,19 @@ public class ConfidenceSystem : MonoBehaviour
       Confidence = 100;
    }
 
+   public void ExchangeQuestionOne(int value)
+   {
+      QuestionOneValue = value;
+   }
+   public void ExchangeQuestionTwo(int value)
+   {
+      QuestionTwoValue = value;
+   }
+   public void ExchangeQuestionThere(int value)
+   {
+      QuestionThereValue = value;
+   }
+
    private void Update()
    {
       Debug.Log(Confidence); 
