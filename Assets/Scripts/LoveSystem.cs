@@ -53,13 +53,13 @@ public class LoveSystem : MonoBehaviour
             Love = Love - 20;
             break;
          case -1:
-            Love = Love;
+            
             break;
          case 0:
             Love = Love + 10;
             break;
          case 1:
-            Love = Love;
+            
             break;
          case 2:
             Love = Love - 20;

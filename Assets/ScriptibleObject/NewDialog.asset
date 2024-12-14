@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NewDialog
   m_EditorClassIdentifier: 
   dialogId: 0
-  mainString: "Futboldan Ho\u015Flan\u0131r m\u0131s\u0131n"
+  mainString: "Futboldan Ho\u015Flan\u0131r m\u0131s\u0131naa"
   option1: "Hay\u0131r ya barabar oyunu"
   option2: "Ya sadece milli ma\xE7lar\u0131 takip ederim asl\u0131nda"
   option3: "Sar\u0131 Lacivert E b\xFCy\xFCk Fener"

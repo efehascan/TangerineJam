@@ -67,13 +67,13 @@ public class ConfidenceSystem : MonoBehaviour
             Confidence = Confidence- 20;
             break;
          case -1:
-            Confidence = Confidence;
+            
             break;
          case 0:
             Confidence = Confidence + 10;
             break;
          case 1:
-            Confidence = Confidence;
+            
             break;
          case 2:
             Confidence = Confidence - 20;
