@@ -42,8 +42,6 @@ public class DialogManager : MonoBehaviour
         }
         
         _confidenceSystem.CheckConfidence();
-        
-        
     }
 
     private void DisplayDialog(Dialog dialog)
