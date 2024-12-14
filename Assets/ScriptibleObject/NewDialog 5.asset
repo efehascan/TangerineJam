@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba697ac7fbf1cc43b346ab1b48d5b6d, type: 3}
   m_Name: NewDialog 5
   m_EditorClassIdentifier: 
-  dialogId: 4
+  dialogId: 5
   mainString: diolog4
   option1: 
   option2: 
@@ -20,5 +20,3 @@ MonoBehaviour:
   option1Id: 
   option2Id: 
   option3Id: 
-  forAction: 1
-  questionId: 0

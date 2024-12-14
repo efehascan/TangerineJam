@@ -158,7 +158,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0792c6de0105980498e515343d34e5ac, type: 2}
   - {fileID: 11400000, guid: 03204c3e1279f684b81342cf40653647, type: 2}
   _confidenceSystem: {fileID: 7582785}
-  currentAnswer: 0
   mainText: {fileID: 424800299}
   option1Button: {fileID: 57470828}
   option2Button: {fileID: 2140983130}
@@ -210,7 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be8168fa7faf09469189dfd673fdf95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogManager: {fileID: 0}
 --- !u!4 &7582786
 Transform:
   m_ObjectHideFlags: 0
