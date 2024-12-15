@@ -28,7 +28,6 @@ public class LoveSystem : MonoBehaviour
 
    private void Update()
    {
-      Debug.Log("Love"+Love);
       loveProgressBar.fillAmount = Love / 100f;
       if (Love>80f)
       {

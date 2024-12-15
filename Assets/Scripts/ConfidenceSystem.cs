@@ -43,8 +43,7 @@ public class ConfidenceSystem : MonoBehaviour
 
    private void Update()
    {
-      Debug.Log(Confidence); 
-      Debug.Log( QuestionOneValue);
+      Debug.Log(Confidence);
       progressBar.fillAmount = Confidence / 100f;
       if (Confidence<25f)
       {
