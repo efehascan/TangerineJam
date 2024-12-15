@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: NewDialog
   m_EditorClassIdentifier: 
   dialogId: 0
-  mainString: "Futboldan Ho\u015Flan\u0131r m\u0131s\u0131naa"
-  option1: "Hay\u0131r ya barabar oyunu"
-  option2: "Ya sadece milli ma\xE7lar\u0131 takip ederim asl\u0131nda"
-  option3: "Sar\u0131 Lacivert E b\xFCy\xFCk Fener"
+  mainString: "Aaaaa tamam.Bir \u015Feyler al kendine.Ee Nas\u0131ls\u0131n nas\u0131l
+    gidiyor?"
+  option1: "Ee Hayat i\u015Fte gidiyoruz sen neler yap\u0131yorsun nelerle ilgilenirsin?"
+  option2: 'Ee normal senden naber? '
+  option3: 'Standart Sen '
   option1Id: 1
   option2Id: 1
-  option3Id: 2
-  questionId: 10
+  option3Id: 1
+  questionId: 56

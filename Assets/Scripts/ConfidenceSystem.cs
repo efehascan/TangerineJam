@@ -76,19 +76,19 @@ public class ConfidenceSystem : MonoBehaviour
       switch (currentValue)
       {
          case -2:
-            Confidence = Confidence- 20;
+            Confidence = Confidence- 50;
             break;
          case -1:
             
             break;
          case 0:
-            Confidence = Confidence + 10;
+            Confidence = Confidence -20;
             break;
          case 1:
             
             break;
          case 2:
-            Confidence = Confidence - 20;
+            Confidence = Confidence - 50;
             break;
          
       }

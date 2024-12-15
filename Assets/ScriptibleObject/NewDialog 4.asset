@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: NewDialog 4
   m_EditorClassIdentifier: 
   dialogId: 4
-  mainString: Selamlar Merhabe ben diyologId4
-  option1: 5 e gider
-  option2: 6 e gider
-  option3: 7 e gider
-  option1Id: 5
+  mainString: "Aaa do\u011Fay\u0131 pek sevmem asl\u0131nda ben biraz metropol insan\u0131y\u0131m"
+  option1: "Anlad\u0131mmm ne i\u015Fle me\u015Fgulsun neler ile u\u011Fra\u015F\u0131rs\u0131n"
+  option2: "EEe sen bo\u015F zamanlar\u0131nda neler yaprs\u0131n"
+  option3: "Ne i\u015F yap\u0131yorsun ne kadar para kazan\u0131yorsun"
+  option1Id: 6
   option2Id: 6
-  option3Id: 7
+  option3Id: 6
   questionId: 2

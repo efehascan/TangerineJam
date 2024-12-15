@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: NewDialog 1
   m_EditorClassIdentifier: 
   dialogId: 1
-  mainString: Selamlar Merhabe ben diyologId1
-  option1: 3e gder
-  option2: 3e gder
-  option3: 3e gder
-  option1Id: 3
-  option2Id: 3
+  mainString: "Asl\u0131nda son zamanlarda iyi de\u011Filim ama gidiyor art\u0131k
+    bir \u015Fekilde. Gitmesi gerkriyor. Beni bo\u015Fver senden naber nelerle ilgilenirsin
+    klasik futbol araba falan m\u0131? "
+  option1: "Ne futbolu arabas\u0131 ya barbar m\u0131y\u0131z? "
+  option2: "Yok ya futbol \xE7ok sarm\u0131yor i\u015Fte sadece milli ma\xE7lar falan"
+  option3: "Ee zaten ba\u015Fka ne olacakt\u0131?"
+  option1Id: 2
+  option2Id: 2
   option3Id: 3
-  questionId: 3
+  questionId: 0

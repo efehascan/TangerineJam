@@ -112,6 +112,7 @@ public class CinematicTextManager : MonoBehaviour
         // Burada istediğiniz fonksiyonu çağırabilirsiniz
         // Örneğin: GameManager.Instance.DialogueFinished();
         _questionsManager.BeginQuestions();
-        Destroy(this);
+        Destroy(textMeshPro.gameObject);
+        Destroy(gameObject);
     }
 }

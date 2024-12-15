@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: NewDialog 2
   m_EditorClassIdentifier: 
   dialogId: 2
-  mainString: Selamlar Merhabe ben diyologId2
-  option1: 4 e gider
-  option2: 4 e gider
-  option3: 4 e gider
+  mainString: "Ya Bence de \xF6yle olmal\u0131 \xE7ok sa\xE7ma gelioyor bana da.
+    Yani evet bir spor ama fanatiklik bence sporu engeliyor"
+  option1: "Yani o senin d\xFC\u015F\xFCncen ama kat\u0131lm\u0131yorum sana"
+  option2: "Yanii bu biraz a\u011F\u0131r oldu san\u0131r\u0131m"
+  option3: "Yani zaten anlaman\u0131 beklemezdim."
   option1Id: 4
   option2Id: 4
   option3Id: 4
-  questionId: 3
+  questionId: 2
