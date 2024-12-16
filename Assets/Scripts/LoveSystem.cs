@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoveSystem : MonoBehaviour
 {
-   public int Love = 100; //genel özgüven değeri
+   public float Love = 0f; //genel özgüven değeri
    private DialogManager _dialogManager; //diyolog manageri çekiyorum
 
    private int QuestionOneExpectionAnswer = 2; //başta karar veridiğimiz soruların değerleri birinci soru için alttakilerde aynı
    private int QuestionTwoExpectionAnswer= 3;
    private int QuestionThereExpectionAnswer= 1;
+
+   public Image loveProgressBar;
    
 
    private int charaterValue; // anlık olarak hangi sorunun değerini tutuğunu hesaplayan değişken
@@ -23,7 +27,11 @@ public class LoveSystem : MonoBehaviour
 
    private void Update()
    {
-      Debug.Log("Love"+Love); 
+      loveProgressBar.fillAmount = Love / 100f;
+      if (Love>80f)
+      {
+         SceneManager.LoadScene("WinScence");
+      }
    }
 
    void DecidedCharaterValue()

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: NewDialog 3
   m_EditorClassIdentifier: 
   dialogId: 3
-  mainString: Selamlar Merhabe ben diyologId3
-  option1: 6 a gider
-  option2: 6 a gider
-  option3: 7 a gider
-  option1Id: 6
-  option2Id: 6
-  option3Id: 7
-  questionId: 2
+  mainString: "Hmmm. Anlad\u0131m. Neyse? Ba\u015Fka nelerle ilgilenirsin."
+  option1: "Do\u011Fa Y\xFCr\xFCy\xFC\u015F\xFC Yapmay\u0131 \xE7ok severim asl\u0131nda"
+  option2: "Yani m\xFCzik dinlerim gitar \xE7alar\u0131m falan"
+  option3: "Kitap okumay\u0131 severim tam bir kitap kurduyum diyebilirm"
+  option1Id: 4
+  option2Id: 5
+  option3Id: 5
+  questionId: 1

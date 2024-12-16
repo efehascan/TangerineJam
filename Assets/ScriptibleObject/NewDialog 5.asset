@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: NewDialog 5
   m_EditorClassIdentifier: 
   dialogId: 5
-  mainString: Selamlar Merhabe ben diyologId5
-  option1: 
-  option2: 
-  option3: 
-  option1Id: 
-  option2Id: 
-  option3Id: 
-  questionId: 0
+  mainString: "Sanata ilgin var biraz di\u011Febiliriz o zaman e harika ben de \xE7ok
+    secerim sanat\u0131 ve sanatla u\u011Fra\u015Fanlar\u0131 bende sanat\xE7\u0131y\u0131m
+    diyebilrim asl\u0131nda "
+  option1: "Haa nas\u0131l bir i\u015F?"
+  option2: Ne gibi bir sanat
+  option3: "AAa meslekta\u015F\u0131z desene"
+  option1Id: 6
+  option2Id: 6
+  option3Id: 6
+  questionId: 2
